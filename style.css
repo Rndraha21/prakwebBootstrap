@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap");
 
+:root {
+  --clr-background: ##f8fafc;
+  --clr-primary: #7969c9;
+  --clr-secondary: #0f1729;
+
+  --clr-text: #0f1729;
+  --clr-card: #ffffff;
+  --clr-border: #dee2e6;
+}
+
+body {
+  background: var(--clr-background);
+}
+
 .container-logo {
   display: flex;
   justify-content: center;
@@ -7,9 +21,10 @@
   gap: 12px;
 }
 
-.fa-microchip {
+.container-logo div i {
   padding: 12px 0;
   font-size: 1.4rem;
+  color: var(--clr-secondary);
 }
 
 #logo {
@@ -19,35 +34,108 @@
   padding: 12px 0;
   height: 50px;
   font-size: 1.4rem;
-  color: white;
+  color: var(--clr-primary);
+  letter-spacing: 3px;
 }
 
 #logo::after {
   content: "|";
-  animation: blink 1s ease infinite
+  color: var(--clr-text);
+  animation: blink 1s ease infinite;
 }
 
-.navbar {
-  background-color: #4840a3;
+.navbar-nav {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav-pills .nav-link.active {
-  background-color: #d8eff7;
-  color: #333333;
+.nav-link {
+  color: var(--clr-secondary);
+  padding: 10px 0;
+}
+
+.nav-link:hover {
+  color: var(--clr-primary);
+}
+
+.nav-link.active {
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 2px;
+  background: var(--clr-primary);
 }
 
 section {
   min-height: 100vh;
   width: 100%;
   display: flex;
+  padding: 4rem 0;
+}
+
+#beranda > .banner {
+  background-image: url(images/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 500px;
+  padding: 0 4rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 4rem;
-  text-transform: uppercase;
+  color: var(--clr-card);
+}
+
+#beranda .banner-content {
+  max-width: 50%;
+}
+
+#beranda .banner-content h2 {
+  font-size: 3rem;
+}
+
+#beranda .banner-content p {
+  margin-bottom: 2rem;
+}
+
+#beranda .banner-content .button {
+  background-color: var(--clr-primary);
+  padding: 12px 2rem;
+  text-decoration: none;
+  color: var(--clr-card);
+  border-radius: 50px;
+  font-weight: bold;
 }
 
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #beranda .banner-content {
+    max-width: 100%;
+  }
+
+  #beranda .banner-content h2 {
+    font-size: 2rem;
+  }
+
+  #beranda .banner-content p {
+    margin-bottom: 2rem;
+  }
+
+  #beranda > .banner {
+    padding: 1rem;
+    background-position-x: 65%;
   }
 }
