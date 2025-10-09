@@ -1,0 +1,23 @@
+.underline {
+  width: 100px;
+  height: 4px;
+  background-color: var(--clr-primary);
+  border-radius: 2px;
+}
+
+.hover-card {
+  transition: all 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.content-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.content-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
