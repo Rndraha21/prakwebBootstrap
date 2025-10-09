@@ -8,13 +8,21 @@
       rel="stylesheet"
       href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
 
-  <body>
-    <!-- Test-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark px-4">
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark px-4 fixed-top">
       <div class="container-fluid d-flex">
-        <a class="navbar-brand" href="#" id="logo">AI Dalam Pendidikan</a>
+        <div class="container-logo">
+          <i class="fa-solid fa-microchip text-light display-6"></i>
+          <a class="navbar-brand" href="#" id="logo"></a>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -23,21 +31,33 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-          <ul class="navbar-nav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#beranda">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#ai">Kecerdasan Buatan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#manfaat">Manfaat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dampak">Dampak</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <section id="beranda">Beranda</section>
+    <section id="ai">AI</section>
+    <section id="manfaat">Manfaat</section>
+    <section id="dampak">Dampak</section>
+
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
