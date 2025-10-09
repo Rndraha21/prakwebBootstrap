@@ -122,20 +122,28 @@ section {
 }
 
 @media (max-width: 600px) {
+  .navbar {
+    background-color: var(--clr-card);
+  }
+
   #beranda .banner-content {
-    max-width: 100%;
+    max-width: 80%;
   }
 
   #beranda .banner-content h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    text-shadow: 4px 4px 5px var(--clr-text);
   }
 
   #beranda .banner-content p {
+    font-size: 14px;
     margin-bottom: 2rem;
+    text-shadow: 4px 4px 5px var(--clr-text);
   }
 
   #beranda > .banner {
     padding: 1rem;
-    background-position-x: 65%;
+    height: 400px;
+    background-position-x: 75%;
   }
 }
