@@ -14,6 +14,11 @@ body {
   background: var(--clr-background);
 }
 
+/* Navbar overwrite */
+.navbar {
+  background: var(--clr-card);
+}
+
 .container-logo {
   display: flex;
   justify-content: center;
@@ -74,11 +79,24 @@ body {
   background: var(--clr-primary);
 }
 
+/* Section overwrite */
 section {
   min-height: 100vh;
   width: 100%;
   display: flex;
   padding: 4rem 0;
+}
+
+.text-primary {
+  color: var(--clr-primary) !important;
+}
+
+.text-secondary {
+  color: var(--clr-text) !important;
+}
+
+.manfaat-card {
+  border-left: 4px solid var(--clr-primary);
 }
 
 #beranda > .banner {
@@ -112,7 +130,24 @@ section {
   text-decoration: none;
   color: var(--clr-card);
   border-radius: 50px;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+#ai,
+#manfaat,
+#dampak {
+  padding: 4rem 4rem;
+}
+
+.list-group {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  color: var(--clr-text);
+}
+
+.list-group li::marker {
+  content: "✔️ ";
+  font-size: 1rem;
 }
 
 @keyframes blink {
