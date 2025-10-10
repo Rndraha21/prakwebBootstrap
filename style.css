@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 :root {
   --clr-background: ##f8fafc;
@@ -12,6 +14,7 @@
 
 body {
   background: var(--clr-background);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Navbar overwrite */
@@ -79,14 +82,6 @@ body {
   background: var(--clr-primary);
 }
 
-/* Section overwrite */
-section {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  padding: 4rem 0;
-}
-
 .text-primary {
   color: var(--clr-primary) !important;
 }
@@ -95,11 +90,15 @@ section {
   color: var(--clr-text) !important;
 }
 
-.manfaat-card {
-  border-left: 4px solid var(--clr-primary);
+.border-primary {
+  border-left: 4px solid var(--clr-primary) !important;
 }
 
-#beranda > .banner {
+header {
+  margin-bottom: 3rem;
+}
+
+header .banner {
   background-image: url(images/banner.png);
   background-position: center;
   background-size: cover;
@@ -112,19 +111,20 @@ section {
   color: var(--clr-card);
 }
 
-#beranda .banner-content {
+header .banner-content {
   max-width: 50%;
 }
 
-#beranda .banner-content h2 {
+header .banner-content h2 {
   font-size: 3rem;
+  font-family: "Bitcount Single";
 }
 
-#beranda .banner-content p {
-  margin-bottom: 2rem;
+header .banner-content p {
+  margin-bottom: 2.4rem;
 }
 
-#beranda .banner-content .button {
+header .banner-content .button {
   background-color: var(--clr-primary);
   padding: 12px 2rem;
   text-decoration: none;
@@ -133,10 +133,19 @@ section {
   font-weight: 500;
 }
 
+.fa-angles-down {
+  animation: bounce 1s infinite;
+}
+
+#hero {
+  margin-bottom: 3rem;
+}
+
 #ai,
 #manfaat,
 #dampak {
-  padding: 4rem 4rem;
+  padding: 4rem;
+  min-height: 100vh;
 }
 
 .list-group {
@@ -150,9 +159,33 @@ section {
   font-size: 1rem;
 }
 
+.container-card {
+  padding: 0 4rem;
+}
+
+.hover-card {
+  transition: all 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi blink */
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+/* Animasi naik turun */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
   }
 }
 
@@ -161,24 +194,32 @@ section {
     background-color: var(--clr-card);
   }
 
-  #beranda .banner-content {
+  header .banner-content {
     max-width: 80%;
   }
 
-  #beranda .banner-content h2 {
+  header .banner-content h2 {
     font-size: 1.6rem;
     text-shadow: 4px 4px 5px var(--clr-text);
   }
 
-  #beranda .banner-content p {
+  header .banner-content p {
     font-size: 14px;
     margin-bottom: 2rem;
     text-shadow: 4px 4px 5px var(--clr-text);
   }
 
-  #beranda > .banner {
+  header .banner {
     padding: 1rem;
     height: 400px;
     background-position-x: 75%;
+  }
+
+  .container-card {
+    padding: 0 1rem;
+  }
+
+  #manfaat {
+    padding: 0 1rem;
   }
 }
