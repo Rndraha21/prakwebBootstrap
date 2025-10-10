@@ -32,7 +32,7 @@ body {
 .container-logo div i {
   padding: 12px 0;
   font-size: 1.4rem;
-  color: var(--clr-secondary);
+  color: var(--clr-primary);
 }
 
 #logo {
