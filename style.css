@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 :root {
   --clr-background: ##f8fafc;
@@ -118,10 +117,12 @@ header .banner-content {
 header .banner-content h2 {
   font-size: 3rem;
   font-family: "Bitcount Single";
+  text-shadow: 4px 4px 5px var(--clr-text);
 }
 
 header .banner-content p {
   margin-bottom: 2.4rem;
+  text-shadow: 4px 4px 5px var(--clr-text);
 }
 
 header .banner-content .button {
@@ -200,13 +201,11 @@ header .banner-content .button {
 
   header .banner-content h2 {
     font-size: 1.6rem;
-    text-shadow: 4px 4px 5px var(--clr-text);
   }
 
   header .banner-content p {
     font-size: 14px;
     margin-bottom: 2rem;
-    text-shadow: 4px 4px 5px var(--clr-text);
   }
 
   header .banner {
