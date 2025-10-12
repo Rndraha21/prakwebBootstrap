@@ -54,6 +54,15 @@ body {
   background: var(--clr-background);
 }
 
+.navbar-toggler {
+  color: transparent;
+  border: none;
+}
+
+.navbar-toggler span {
+  color: var(--clr-primary) !important;
+}
+
 .container-logo {
   display: flex;
   justify-content: center;
@@ -183,7 +192,6 @@ header .banner {
   display: flex;
   align-items: center;
   color: var(--clr-text);
-  z-index: -1;
 }
 
 header .banner-content {
@@ -208,6 +216,7 @@ header .banner-content .button {
   color: var(--clr-text);
   border-radius: 50px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .fa-angles-down {
@@ -256,6 +265,14 @@ header .banner-content .button {
 .title-section .title {
   position: relative;
 }
+
+.hover-card {
+  transition: all 0.3s linear;
+}
+
+.hover-card:hover {
+  transform: translateY(-3px);
+}
 /* Component styling end*/
 
 /* Hero section start */
@@ -279,15 +296,10 @@ header .banner-content .button {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  padding: 3px;
+  padding: 2px;
   z-index: -1;
   border-radius: 10px;
   animation: spin 3s linear infinite;
-}
-
-.hero-card::before {
-  filter: blur(2rem);
-  opacity: 0.5;
 }
 
 .darkmode .hero-card::after,
@@ -339,31 +351,21 @@ header .banner-content .button {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  padding: 3px;
+  padding: 2px;
   border-radius: 10px;
   z-index: -1;
   animation: spin 3s linear infinite;
 }
 
-.btn-link > a::before {
+.btn-link > a::before,
+.manfaat-card::before,
+.hero-card::before {
   filter: blur(1.5rem);
   opacity: 0.5;
 }
 
-.darkmode .btn-link > a::after,
-.darkmode .btn-link > a::before {
-  background-image: conic-gradient(
-    from var(--angle),
-    transparent 70%,
-    #ff4545,
-    #00ff99,
-    #006aff,
-    #ff0095,
-    #ff4545
-  );
-}
-
-.btn-link > a > i {
+.btn-link > a > i,
+.list-group-2 + a > i {
   animation: right 1s linear infinite;
 }
 
@@ -381,8 +383,54 @@ header .banner-content .button {
   font-size: 1rem;
 }
 
-.container-card {
-  padding: 0 4rem;
+.list-group-2 {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  color: var(--clr-text-secondary);
+}
+
+.list-group-2 li::marker {
+  content: "🟣";
+  font-size: 1rem;
+}
+
+.list-group-2 + a {
+  display: inline-block;
+  background: var(--clr-primary);
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: var(--clr-text);
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.list-group-2 + a:hover {
+  transform: scale(1.1);
+}
+
+.manfaat-card {
+  position: relative;
+}
+
+.manfaat-card::after,
+.manfaat-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    var(--clr-primary)
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 2px;
+  border-radius: 8px;
+  animation: spin 3s linear infinite;
 }
 /* Manfaat styling end */
 
