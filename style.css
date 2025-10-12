@@ -39,6 +39,10 @@
   --clr-footer: #0f1729;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--clr-background);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -373,25 +377,15 @@ header .banner-content .button {
 
 /* Manfaat styling start */
 .list-group {
-  list-style-type: none;
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='14px' viewBox='0 -960 960 960' width='24px' fill='%237969c9'><path d='M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z'/></svg>");
   padding-left: 1.5rem;
   color: var(--clr-text-secondary);
-}
-
-.list-group li::marker {
-  content: "✔️ ";
-  font-size: 1rem;
 }
 
 .list-group-2 {
-  list-style-type: none;
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='14px' viewBox='0%20-960%20960%20960' width='24px' fill='%237969c9'><path d='M620-520q25%200%2042.5-17.5T680-580q0-25-17.5-42.5T620-640q-25%200-42.5%2017.5T560-580q0%2025%2017.5%2042.5T620-520Zm-280%200q25%200%2042.5-17.5T400-580q0-25-17.5-42.5T340-640q-25%200-42.5%2017.5T280-580q0%2025%2017.5%2042.5T340-520Zm140%20260q68%200%20123.5-38.5T684-400h-66q-22%2037-58.5%2058.5T480-320q-43%200-79.5-21.5T342-400h-66q25%2063%2080.5%20101.5T480-260Zm0%20180q-83%200-156-31.5T197-197q-54-54-85.5-127T80-480q0-83%2031.5-156T197-763q54-54%20127-85.5T480-880q83%200%20156%2031.5T763-763q54%2054%2085.5%20127T880-480q0%2083-31.5%20156T763-197q-54%2054-127%2085.5T480-80Zm0-400Zm0%20320q134%200%20227-93t93-227q0-134-93-227t-227-93q-134%200-227%2093t-93%20227q0%20134%2093%20227t227%2093Z'/></svg>");
   padding-left: 1.5rem;
   color: var(--clr-text-secondary);
-}
-
-.list-group-2 li::marker {
-  content: "🟣";
-  font-size: 1rem;
 }
 
 .list-group-2 + a {
@@ -537,4 +531,3 @@ footer .link-sosmed > div {
   }
 }
 /* Responsive mobile end */
- 
