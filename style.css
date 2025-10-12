@@ -44,6 +44,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+::after,
+::before {
+  box-sizing: content-box;
+}
+
 /* Navbar styling overwrite end*/
 .navbar {
   background: var(--clr-background);
@@ -269,17 +274,12 @@ header .banner-content .button {
   background-image: conic-gradient(
     from var(--angle),
     transparent 70%,
-    /* #ff4545,
-    #00ff99,
-    #006aff,
-    #ff0095,
-    #ff4545 */
-      var(--clr-primary)
+    var(--clr-primary)
   );
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  padding: 90px;
+  padding: 3px;
   z-index: -1;
   border-radius: 10px;
   animation: spin 3s linear infinite;
@@ -288,6 +288,19 @@ header .banner-content .button {
 .hero-card::before {
   filter: blur(2rem);
   opacity: 0.5;
+}
+
+.darkmode .hero-card::after,
+.darkmode .hero-card::before {
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    #ff4545,
+    #00ff99,
+    #006aff,
+    #ff0095,
+    #ff4545
+  );
 }
 /* Hero section end */
 
@@ -326,7 +339,7 @@ header .banner-content .button {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  padding: 22px;
+  padding: 3px;
   border-radius: 10px;
   z-index: -1;
   animation: spin 3s linear infinite;
@@ -335,6 +348,19 @@ header .banner-content .button {
 .btn-link > a::before {
   filter: blur(1.5rem);
   opacity: 0.5;
+}
+
+.darkmode .btn-link > a::after,
+.darkmode .btn-link > a::before {
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    #ff4545,
+    #00ff99,
+    #006aff,
+    #ff0095,
+    #ff4545
+  );
 }
 
 .btn-link > a > i {
