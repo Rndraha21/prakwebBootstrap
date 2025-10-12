@@ -509,6 +509,11 @@ footer .link-sosmed > div {
     margin-bottom: 2rem;
   }
 
+  header {
+    padding: 2rem 0 0 0;
+    margin-bottom: 1rem;
+  }
+
   header .banner {
     padding: 1rem;
     height: 400px;
