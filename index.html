@@ -58,6 +58,30 @@
           </ul>
         </div>
       </div>
+      <button id="theme-switch">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3"
+        >
+          <path
+            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3"
+        >
+          <path
+            d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+          />
+        </svg>
+      </button>
     </nav>
 
     <!-- Header Banner -->
@@ -77,183 +101,380 @@
       </div>
     </header>
 
-    <!-- Robin Beranda-->
-    <section id="hero">
-      <div
-        class="container-card d-flex flex-md-row flex-column justify-content-center mt-1 gap-4"
-      >
-        <div class="bg-white shadow rounded hover-card p-4">
-          <h3 class="text-primary fs-4">
-            <i class="fa-solid fa-graduation-cap"></i> Pembelajaran Adaptif
-          </h3>
-          <p class="text-secondary">
-            AI menyesuaikan materi dan kecepatan belajar secara real-time sesuai
-            kemampuan unik setiap siswa, menciptakan jalur pendidikan yang
-            benar-benar personal.
-          </p>
+    <main>
+      <!-- Robin Beranda-->
+      <section id="hero">
+        <div
+          class="container-card d-flex flex-md-row flex-column justify-content-around gap-4 mt-1 p-4"
+        >
+          <div class="bg-card hover-card shadow p-4">
+            <h3 class="text-primary fs-4">
+              <span class="icon"
+                ><i class="fa-solid fa-graduation-cap"></i
+              ></span>
+              Pembelajaran Adaptif
+            </h3>
+            <p class="text-secondary">
+              AI menyesuaikan materi dan kecepatan belajar secara real-time
+              sesuai kemampuan unik setiap siswa, menciptakan jalur pendidikan
+              yang benar-benar personal.
+            </p>
+          </div>
+          <div class="bg-card hover-card shadow p-4">
+            <h3 class="text-primary fs-4">
+              <span class="icon"><i class="fa-solid fa-robot"></i></span>
+              Otomatisasi Tugas Guru
+            </h3>
+            <p class="text-secondary">
+              Membebaskan waktu guru dari tugas administratif seperti penilaian
+              esai dan rekap nilai, sehingga mereka bisa lebih fokus pada
+              interaksi mendalam dengan siswa.
+            </p>
+          </div>
+          <div class="bg-card hover-card shadow p-4">
+            <h3 class="text-primary fs-4">
+              <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+              Analitik & Wawasan Cerdas
+            </h3>
+            <p class="text-secondary">
+              Menganalisis pola belajar siswa untuk mengidentifikasi potensi
+              kesulitan lebih dini dan memberikan rekomendasi intervensi yang
+              efektif.
+            </p>
+          </div>
         </div>
-        <div class="bg-white shadow rounded hover-card p-4">
-          <h3 class="text-primary fs-4">
-            <i class="fa-solid fa-robot"></i> Otomatisasi Tugas Guru
-          </h3>
-          <p class="text-secondary">
-            Membebaskan waktu guru dari tugas administratif seperti penilaian
-            esai dan rekap nilai, sehingga mereka bisa lebih fokus pada
-            interaksi mendalam dengan siswa.
-          </p>
-        </div>
-        <div class="bg-white shadow rounded hover-card p-4">
-          <h3 class="text-primary fs-4">
-            <i class="fa-solid fa-chart-simple"></i> Analitik & Wawasan Cerdas
-          </h3>
-          <p class="text-secondary">
-            Menganalisis pola belajar siswa untuk mengidentifikasi potensi
-            kesulitan lebih dini dan memberikan rekomendasi intervensi yang
-            efektif.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Dikerjakan Miya -->
-    <section id="ai">
-      <div>
-        <h2>1.QuillBot</h2>
-        <p>
-          QuillBot adalah sebuah asisten penulisan online berbasis Kecerdasan
-          Buatan (AI) yang fungsi utamanya adalah untuk memparafrase (menulis
-          ulang) teks yang sudah ada dengan tetap mempertahankan makna aslinya.
-        </p>
-        <p>
-          Paraphrasing Tool (Alat Parafrase), Grammar Checker (Pemeriksa Tata
-          Bahasa), Summarizer (Perangkum Teks), Ini adalah fitur inti dari
-          QuillBot. AI-nya akan menganalisis kalimat yang Anda masukkan dan
-          menghasilkan ulang kalimat tersebut dengan menggunakan struktur
-          kalimat dan pilihan kata (sinonim) yang berbeda.
-        </p>
-      </div>
-      <div>
-        <h2>2.Magicschool.ai</h2>
-        <p>
-          Tool AI yang dibuat khusus untuk pendidik. Fitur utamanya mencakup
-          pembuatan rencana pembelajaran, kuis, rubrik penilaian, teks dengan
-          tingkat baca yang berbeda (text leveler), dan banyak lagi dalam
-          hitungan detik.
-        </p>
-        <p>
-          Lesson Plan Generator (Pembuat Rencana Pembelajaran/RPP), Quiz
-          Generator / Assessment Tool (Pembuat Kuis/Soal Evaluasi), Rubric Maker
-          (Pembuat Rubrik Penilaian), Content Simplifier / Text Leveler
-          (Penyederhana Materi), Feedback Assistant (Asisten Umpan Balik),
-          AI-Resistant Assignment (Pembuat Tugas Tahan AI)
-        </p>
-      </div>
-      <div>
-        <h2>3.Chatgpt dan Gemini</h2>
-        <p>
-          ChatGPT (kependekan dari Chat Generative Pre-trained Transformer)
-          adalah chatbot kecerdasan buatan (AI) yang dikembangkan oleh OpenAI.
-          Model ini dirancang khusus untuk berinteraksi dengan pengguna dalam
-          bentuk percakapan tekstual yang terasa alami dan seperti manusia. Bisa
-          dibilang, ChatGPT adalah aplikasi yang menggunakan teknologi dasar GPT
-          (yang sudah dijelaskan sebelumnya) dan disempurnakan agar sangat mahir
-          dalam dialog dan respons yang kontekstual.
-        </p>
-        <p>
-          Fungsi sebagai Asisten Produktivitas, Fungsi sebagai Alat Pembelajaran
-          dan Riset, Fungsi Khusus untuk Dunia Bisnis dan Profesional, ChatGPT
-          bertindak sebagai "otak" bahasa yang dapat menghasilkan, memproses,
-          dan menyempurnakan teks sesuai instruksi Anda, menjadikannya alat yang
-          sangat kuat untuk meningkatkan efisiensi kerja sehari-hari.
-        </p>
-      </div>
-      <div>
-        <h2>4.Scribesense</h2>
-        <p>
-          Penilaian Otomatis ScribeSense menggunakan AI untuk mengotomatisasi
-          proses penilaian tugas dan ujian. Platform ini mampu memindai jawaban
-          siswa, mengenali tulisan tangan, dan memberikan penilaian yang cepat
-          dan akurat.
-        </p>
-        <p>
-          Pemrosesan tulisan tangan, analisis data hasil ujian, integrasi dengan
-          sistem manajemen pembelajaran (LMS).
-        </p>
-      </div>
-      <div>
-        <h2>5.Quizlet</h2>
-        <p>
-          Quizlet adalah platform pembelajaran berbasis AI yang membantu siswa
-          mengingat informasi melalui kartu flash digital, kuis, dan game
-          edukasi. Teknologi AI di Quizlet mempersonalisasi latihan berdasarkan
-          kebutuhan belajar individu.
-        </p>
-        <p>
-          Mode belajar adaptif, Latihan kuis berbasis AI, Pembuatan kartu flash
-          otomatis.
-        </p>
-      </div>
-    </section>
+      <!-- Dikerjakan Miya -->
+      <section id="ai">
+        <div>
+          <h2>1.QuillBot</h2>
+          <p>
+            QuillBot adalah sebuah asisten penulisan online berbasis Kecerdasan
+            Buatan (AI) yang fungsi utamanya adalah untuk memparafrase (menulis
+            ulang) teks yang sudah ada dengan tetap mempertahankan makna
+            aslinya.
+          </p>
+          <p>
+            Paraphrasing Tool (Alat Parafrase), Grammar Checker (Pemeriksa Tata
+            Bahasa), Summarizer (Perangkum Teks), Ini adalah fitur inti dari
+            QuillBot. AI-nya akan menganalisis kalimat yang Anda masukkan dan
+            menghasilkan ulang kalimat tersebut dengan menggunakan struktur
+            kalimat dan pilihan kata (sinonim) yang berbeda.
+          </p>
+        </div>
+        <div>
+          <h2>2.Magicschool.ai</h2>
+          <p>
+            Tool AI yang dibuat khusus untuk pendidik. Fitur utamanya mencakup
+            pembuatan rencana pembelajaran, kuis, rubrik penilaian, teks dengan
+            tingkat baca yang berbeda (text leveler), dan banyak lagi dalam
+            hitungan detik.
+          </p>
+          <p>
+            Lesson Plan Generator (Pembuat Rencana Pembelajaran/RPP), Quiz
+            Generator / Assessment Tool (Pembuat Kuis/Soal Evaluasi), Rubric
+            Maker (Pembuat Rubrik Penilaian), Content Simplifier / Text Leveler
+            (Penyederhana Materi), Feedback Assistant (Asisten Umpan Balik),
+            AI-Resistant Assignment (Pembuat Tugas Tahan AI)
+          </p>
+        </div>
+        <div>
+          <h2>3.Chatgpt dan Gemini</h2>
+          <p>
+            ChatGPT (kependekan dari Chat Generative Pre-trained Transformer)
+            adalah chatbot kecerdasan buatan (AI) yang dikembangkan oleh OpenAI.
+            Model ini dirancang khusus untuk berinteraksi dengan pengguna dalam
+            bentuk percakapan tekstual yang terasa alami dan seperti manusia.
+            Bisa dibilang, ChatGPT adalah aplikasi yang menggunakan teknologi
+            dasar GPT (yang sudah dijelaskan sebelumnya) dan disempurnakan agar
+            sangat mahir dalam dialog dan respons yang kontekstual.
+          </p>
+          <p>
+            Fungsi sebagai Asisten Produktivitas, Fungsi sebagai Alat
+            Pembelajaran dan Riset, Fungsi Khusus untuk Dunia Bisnis dan
+            Profesional, ChatGPT bertindak sebagai "otak" bahasa yang dapat
+            menghasilkan, memproses, dan menyempurnakan teks sesuai instruksi
+            Anda, menjadikannya alat yang sangat kuat untuk meningkatkan
+            efisiensi kerja sehari-hari.
+          </p>
+        </div>
+        <div>
+          <h2>4.Scribesense</h2>
+          <p>
+            Penilaian Otomatis ScribeSense menggunakan AI untuk mengotomatisasi
+            proses penilaian tugas dan ujian. Platform ini mampu memindai
+            jawaban siswa, mengenali tulisan tangan, dan memberikan penilaian
+            yang cepat dan akurat.
+          </p>
+          <p>
+            Pemrosesan tulisan tangan, analisis data hasil ujian, integrasi
+            dengan sistem manajemen pembelajaran (LMS).
+          </p>
+        </div>
+        <div>
+          <h2>5.Quizlet</h2>
+          <p>
+            Quizlet adalah platform pembelajaran berbasis AI yang membantu siswa
+            mengingat informasi melalui kartu flash digital, kuis, dan game
+            edukasi. Teknologi AI di Quizlet mempersonalisasi latihan
+            berdasarkan kebutuhan belajar individu.
+          </p>
+          <p>
+            Mode belajar adaptif, Latihan kuis berbasis AI, Pembuatan kartu
+            flash otomatis.
+          </p>
+        </div>
+      </section>
 
-    <!-- Habib -->
-    <section id="manfaat">
-      <div>
-        <!-- Judul Utama -->
+      <!-- Habib -->
+      <section id="manfaat">
+        <div>
+          <!-- Judul Utama -->
+          <div class="text-center">
+            <h2 class="fw-bold mb-3 text-primary">
+              Manfaat AI dalam Pendidikan
+            </h2>
+            <p class="text-secondary">
+              Temukan bagaimana kecerdasan buatan membantu membentuk masa depan
+              pembelajaran yang lebih cerdas dan efisien.
+            </p>
+            <div class="underline mx-auto mb-4"></div>
+          </div>
+
+          <!-- Kolom Kiri -->
+          <div class="row g-5">
+            <div class="col-md-4">
+              <div
+                class="p-4 bg-card rounded shadow hover-card border-primary border-start"
+              >
+                <h5 class="fw-bold mb-3 text-primary">
+                  <i class="fa-solid fa-lightbulb me-2"></i>Manfaat Utama
+                </h5>
+                <ul class="list-group">
+                  <li>
+                    Memberikan waktu lebih bagi siswa untuk terlibat aktif dalam
+                    pembelajaran.
+                  </li>
+                  <li>Membantu guru mengotomatisasi tugas administratif.</li>
+                  <li>Menyediakan pembelajaran yang lebih dipersonalisasi.</li>
+                  <li>Menghadirkan wawasan untuk meningkatkan kurikulum.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Kolom Kanan -->
+            <div class="col-md-8">
+              <div>
+                <img
+                  src="images/ai-education.jpg"
+                  alt="AI dalam Pendidikan"
+                  class="hover-card img-fluid rounded mb-4 shadow-sm"
+                />
+                <p class="text-secondary">
+                  Kecerdasan buatan (AI) membantu meningkatkan hasil belajar
+                  dengan mengotomatisasi tugas rutin di ruang kelas,
+                  menghadirkan wawasan yang dapat ditindaklanjuti, dan
+                  memberikan pengalaman pembelajaran yang lebih dipersonalisasi
+                  bagi siswa.
+                </p>
+                <p class="text-secondary">
+                  Dengan adanya AI, guru dapat fokus pada pengajaran yang lebih
+                  bermakna, sementara sistem AI membantu dalam memberikan umpan
+                  balik cepat, menganalisis performa siswa, dan menyesuaikan
+                  materi sesuai kebutuhan individu. Hal ini membuka peluang baru
+                  untuk pembelajaran yang efektif dan adaptif di masa depan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="dampak">
         <div class="text-center">
-          <h2 class="fw-bold mb-3 text-primary">Manfaat AI dalam Pendidikan</h2>
-          <p class="text-secondary">
-            Temukan bagaimana kecerdasan buatan membantu membentuk masa depan
-            pembelajaran yang lebih cerdas dan efisien.
+          <h2 class="text-primary mb-2">
+            Dampak Dua Sisi AI di Dunia Pendidikan
+          </h2>
+          <p class="text-secondary mb-5">
+            Dampak Positif (Revolusi Pembelajaran) dan Dampak Negatif &
+            Tantangan (Sisi yang Perlu Diwaspadai).
           </p>
-          <div class="underline mx-auto mb-4"></div>
         </div>
-
-        <!-- Kolom Kiri -->
-        <div class="row g-5">
-          <div class="col-md-4">
-            <div class="p-4 bg-white rounded shadow hover-card border-primary border-start">
-              <h5 class="fw-bold mb-3 text-primary">
-                <i class="fa-solid fa-lightbulb me-2"></i>Manfaat Utama
-              </h5>
-              <ul class="list-group">
-                <li>
-                  Memberikan waktu lebih bagi siswa untuk terlibat aktif dalam
-                  pembelajaran.
-                </li>
-                <li>Membantu guru mengotomatisasi tugas administratif.</li>
-                <li>Menyediakan pembelajaran yang lebih dipersonalisasi.</li>
-                <li>Menghadirkan wawasan untuk meningkatkan kurikulum.</li>
-              </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-center text-primary">Dampak Positif</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="fs-5">
+                  Pembelajaran yang Super Personal (Hyper-Personalization)
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Impedit vel ullam fuga deleniti pariatur ipsam, laborum velit
+                  facilis dicta nemo mollitia modi, expedita vitae saepe
+                  distinctio itaque harum tenetur quidem delectus, perspiciatis
+                  temporibus magni nam. Dolorem necessitatibus accusantium
+                  beatae molestias.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <h4 class="fs-5">Efisiensi Maksimal untuk Guru dan Siswa</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Impedit vel ullam fuga deleniti pariatur ipsam, laborum velit
+                  facilis dicta nemo mollitia modi, expedita vitae saepe
+                  distinctio itaque harum tenetur quidem delectus, perspiciatis
+                  temporibus magni nam. Dolorem necessitatibus accusantium
+                  beatae molestias.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <h4 class="fs-5">Efisiensi Maksimal untuk Guru dan Siswa</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Impedit vel ullam fuga deleniti pariatur ipsam, laborum velit
+                  facilis dicta nemo mollitia modi, expedita vitae saepe
+                  distinctio itaque harum tenetur quidem delectus, perspiciatis
+                  temporibus magni nam. Dolorem necessitatibus accusantium
+                  beatae molestias.
+                </p>
+              </div>
             </div>
           </div>
+          <div class="col-md-6">
+            <h3 class="text-center text-primary">Dampak Negatif</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="fs-5">Kesenjangan Digital yang Semakin Dalam</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Impedit vel ullam fuga deleniti pariatur ipsam, laborum velit
+                  facilis dicta nemo mollitia modi, expedita vitae saepe
+                  distinctio itaque harum tenetur quidem delectus, perspiciatis
+                  temporibus magni nam. Dolorem necessitatibus accusantium
+                  beatae molestias.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <h4 class="fs-5">Erosi Kemampuan Berpikir Kritis & Kreatif</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Impedit vel ullam fuga deleniti pariatur ipsam, laborum velit
+                  facilis dicta nemo mollitia modi, expedita vitae saepe
+                  distinctio itaque harum tenetur quidem delectus, perspiciatis
+                  temporibus magni nam. Dolorem necessitatibus accusantium
+                  beatae molestias.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <h4 class="fs-5">Masalah Privasi dan Keamanan Data</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Impedit vel ullam fuga deleniti pariatur ipsam, laborum velit
+                  facilis dicta nemo mollitia modi, expedita vitae saepe
+                  distinctio itaque harum tenetur quidem delectus, perspiciatis
+                  temporibus magni nam. Dolorem necessitatibus accusantium
+                  beatae molestias.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-          <!-- Kolom Kanan -->
-          <div class="col-md-8">
-            <div>
-              <img
-                src="images/ai-education.jpg"
-                alt="AI dalam Pendidikan"
-                class="hover-card img-fluid rounded mb-4 shadow-sm"
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #1c2331"
+    >
+      <section class="d-flex justify-content-between p-4 bg-primary">
+        <div class="me-5">
+          <span>Get with us on social networks:</span>
+        </div>
+        <div>
+          <a href="" class="text-white me-4 text-decoration-none">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="" class="text-white me-4 text-decoration-none">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4 text-decoration-none">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4 text-decoration-none">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Section: Links  -->
+      <section id="section-2">
+        <div class="text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 class="fw-bold">StaphSec</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto bg-primary"
+                style="width: 60px; height: 2px"
               />
-              <p class="text-secondary">
-                Kecerdasan buatan (AI) membantu meningkatkan hasil belajar
-                dengan mengotomatisasi tugas rutin di ruang kelas, menghadirkan
-                wawasan yang dapat ditindaklanjuti, dan memberikan pengalaman
-                pembelajaran yang lebih dipersonalisasi bagi siswa.
+              <p>
+                StaphSec lahir dari sebuah gagasan sederhana: "mengamankan"
+                (secure) masa depan melalui pendidikan. Kami adalah kolektif
+                digital yang percaya bahwa pendidikan berkualitas adalah
+                antivirus terbaik untuk melawan kemiskinan, ketidaksetaraan, dan
+                ketidakpastian. Nama "StaphSec" terinspirasi dari
+                Staphylococcus, kuman yang dapat menyebar cepat.
               </p>
-              <p class="text-secondary">
-                Dengan adanya AI, guru dapat fokus pada pengajaran yang lebih
-                bermakna, sementara sistem AI membantu dalam memberikan umpan
-                balik cepat, menganalisis performa siswa, dan menyesuaikan
-                materi sesuai kebutuhan individu. Hal ini membuka peluang baru
-                untuk pembelajaran yang efektif dan adaptif di masa depan.
+            </div>
+
+            <div class="col-md-4 mx-auto mb-4">
+              <h6 class="fw-bold">Tim Pengembang</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white text-decoration-none"
+                  >Awalisani Umiyati - 242104015</a
+                >
               </p>
+              <p>
+                <a href="#!" class="text-white text-decoration-none"
+                  >Habiburrahman - 242104018</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-white text-decoration-none"
+                  >Robin Citrawan Ndraha - 242104021</a
+                >
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <i class="fas fa-home mr-3"></i> Teknologi Informasi, Unjaya
+              </p>
+              <p><i class="fas fa-envelope mr-3"></i> staphsec@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +6281292749434</p>
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2025 StaphSec
       </div>
-    </section>
-    <section id="dampak">Dampak</section>
+      <!-- Copyright -->
+    </footer>
+
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
