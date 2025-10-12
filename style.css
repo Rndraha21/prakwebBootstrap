@@ -306,3 +306,128 @@ header .banner-content .button {
     padding: 0 1rem;
   }
 }
+
+* {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+.container {
+  background: #f4f7f6;
+  padding:50px 15px;
+  padding-bottom: 100px;
+}
+
+.container .heading {
+  color: #1a237e;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: center;
+  padding-bottom: 30px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  grid-auto-rows: 1fr;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.container .box-container .box {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  height: 100%;
+}
+
+.container .box-container .box img {
+  height: 80px;
+}
+
+.container .box-container .box h2 {
+  color: #1a237e;
+  font-size: 24px;
+  padding: 15px 0;
+}
+
+.container .box-container .box p {
+  color: #666;
+  font-size: 20px;
+  padding: 10px 0;
+  line-height: 1.8;
+  text-transform: none;
+}
+.container .box-container .box ol {
+  color: #666;
+  font-size: 15px;
+  padding: center;
+  line-height: 1.5;
+  text-transform: none;
+}
+.container .box-container .box .btn {
+  margin: 15px 0 0;
+  display: inline-block;
+  background: #1a237e;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .box-container .box .btn:hover {
+  background: #3949ab;
+}
+
+.container .box-container .box:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.container .box-container .box:nth-child(4) {
+    grid-row: 2;
+    grid-column: 1 / span 1;
+    margin-left: auto;
+}
+
+.container .box-container .box:nth-child(5) {
+    grid-row: 2;
+    grid-column: 2 / span 1;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .container .box-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .container .box-container .box:nth-child(4),
+  .container .box-container .box:nth-child(5) {
+      grid-column: auto;
+      grid-row: auto;
+      margin: 0;
+  }
+  
+  .container .box-container .box {
+    margin: 0;
+  }
+}
