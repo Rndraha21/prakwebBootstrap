@@ -67,9 +67,9 @@ Website ini adalah hasil kolaborasi dari tim **StaphSec**.
 | Robin Citrawan Ndraha| 242104021 | _Lead & JavaScript_ |
 
 Terhubung dengan kami melalui kontak yang ada di _footer_ website!
-
 ---
 
 <div align="center">
   <p>Dibuat dengan ❤️ untuk dunia pendidikan yang lebih cerdas.</p>
+  <a href='https://prakweb-bootstrap.vercel.app/'>Visit this website</a>
 </div>
