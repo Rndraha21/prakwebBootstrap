@@ -286,6 +286,10 @@ header .banner-content .button {
   border-radius: 10px;
 }
 
+.hero-card > h3 {
+ line-height: 2;
+}
+
 .hero-card::after,
 .hero-card::before {
   content: "";
