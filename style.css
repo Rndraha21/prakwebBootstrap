@@ -287,7 +287,7 @@ header .banner-content .button {
 }
 
 .hero-card > h3 {
- line-height: 2;
+  line-height: 2;
 }
 
 .hero-card::after,
@@ -436,6 +436,59 @@ header .banner-content .button {
 .dampak .col-md-12 {
   padding: 1rem;
 }
+
+.dampak-content {
+  margin-bottom: 4rem;
+}
+
+.dampak-image img {
+  width: 500px;
+  border-radius: 8px;
+}
+
+.breadcrumb {
+  margin-top: 5rem;
+}
+
+.dampak .dampak-title {
+  margin-bottom: 0;
+}
+
+.dampak-content .col-md-12 {
+  position: relative;
+  background: var(--clr-background);
+}
+
+.darkmode .dampak-content .col-md-12::after,
+.darkmode .dampak-content .col-md-12::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    var(--clr-primary)
+      /* #ff4545,
+    #00ff99,
+    #006aff,
+    #ff0095,
+    #ff4545 */
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 2px;
+  animation: spin 3s linear infinite;
+  border-radius: 10px;
+}
+
+.darkmode .dampak-content .col-md-12::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
 /* Dampak section end*/
 
 /* Footer start */
@@ -532,6 +585,10 @@ footer .link-sosmed > div {
 
   #dampak {
     padding: 5rem 1rem;
+  }
+
+  .dampak-image img {
+    width: 300px;
   }
 }
 /* Responsive mobile end */
