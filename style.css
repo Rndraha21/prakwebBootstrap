@@ -469,11 +469,6 @@ header .banner-content .button {
     from var(--angle),
     transparent 70%,
     var(--clr-primary)
-      /* #ff4545,
-    #00ff99,
-    #006aff,
-    #ff0095,
-    #ff4545 */
   );
   top: 50%;
   left: 50%;
@@ -589,6 +584,15 @@ footer .link-sosmed > div {
 
   .dampak-image img {
     width: 300px;
+  }
+
+  .darkmode .dampak-content .col-md-12::after,
+  .darkmode .dampak-content .col-md-12::before {
+    background-image: conic-gradient(from var(--angle), var(--clr-primary));
+  }
+
+  .darkmode .dampak-content .col-md-12::before {
+    filter: blur(0.5rem);
   }
 }
 /* Responsive mobile end */
