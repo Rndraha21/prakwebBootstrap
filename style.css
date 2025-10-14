@@ -454,15 +454,15 @@ header .banner-content .button {
   margin-bottom: 0;
 }
 
-.dampak-content .dampak-item {
+.dampak-content .carousel {
   position: relative;
   background: var(--clr-background);
   margin-bottom: 2.5rem;
   border-radius: 10px;
 }
 
-.darkmode .dampak-content .dampak-item::after,
-.darkmode .dampak-content .dampak-item::before {
+.darkmode .dampak-content .carousel::after,
+.darkmode .dampak-content .carousel::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -481,11 +481,23 @@ header .banner-content .button {
   border-radius: 10px;
 }
 
-.darkmode .dampak-content .col-md-12::before {
+.darkmode .dampak-content .carousel::before {
   filter: blur(1.5rem);
   opacity: 0.5;
 }
 
+.dampak-content .carousel .dampak-item {
+  padding: 24px;
+}
+
+.button-container button {
+  background: none;
+  outline: none;
+  border: none;
+  color: var(--clr-primary);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
 /* Dampak section end*/
 
 /* Footer start */
@@ -588,12 +600,19 @@ footer .link-sosmed > div {
     width: 300px;
   }
 
-  .darkmode .dampak-content .col-md-12::after,
-  .darkmode .dampak-content .col-md-12::before {
+  .dampak-content .carousel .dampak-item {
+    padding: 8px;
+  }
+  .dampak-content .carousel .dampak-item h4 {
+    text-align: center;
+  }
+
+  .darkmode .dampak-content .carousel::after,
+  .darkmode .dampak-content .carousel::before {
     background-image: conic-gradient(from var(--angle), var(--clr-primary));
   }
 
-  .darkmode .dampak-content .col-md-12::before {
+  .darkmode .dampak-content .carousel::before {
     filter: blur(0.5rem);
   }
 }
