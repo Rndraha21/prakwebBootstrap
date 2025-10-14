@@ -43,6 +43,18 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--foreground);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+}
+
 body {
   background: var(--clr-background);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
