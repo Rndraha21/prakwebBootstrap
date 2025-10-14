@@ -454,13 +454,15 @@ header .banner-content .button {
   margin-bottom: 0;
 }
 
-.dampak-content .col-md-12 {
+.dampak-content .dampak-item {
   position: relative;
   background: var(--clr-background);
+  margin-bottom: 2.5rem;
+  border-radius: 10px;
 }
 
-.darkmode .dampak-content .col-md-12::after,
-.darkmode .dampak-content .col-md-12::before {
+.darkmode .dampak-content .dampak-item::after,
+.darkmode .dampak-content .dampak-item::before {
   content: "";
   position: absolute;
   width: 100%;
